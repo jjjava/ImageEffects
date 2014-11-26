@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package imageeffects;
 
@@ -209,7 +205,6 @@ class ColorFilter implements MyFilter {
     WritableRaster displayRaster = sourceRaster.createCompatibleWritableRaster();
     changeColors.filter(sourceRaster, displayRaster);
     return new BufferedImage(image.getColorModel(), displayRaster, true, null);
-
   }
 }
     
